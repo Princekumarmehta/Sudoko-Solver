@@ -1,0 +1,18 @@
+{
+  "builds": [
+    {
+      "src": "src/index.jsx",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "static/main.js",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
